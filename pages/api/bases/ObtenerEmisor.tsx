@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client'
 import { prisma } from "../../../lib/prisma";
 
 
-export default async function handle(req , res) {
+export default async function handle(req:any,res:anys) {
   const {Otro}=req.body
   try{
   const Emisores = await prisma.emisores.findMany({

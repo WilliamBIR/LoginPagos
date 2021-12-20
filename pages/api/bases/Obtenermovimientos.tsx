@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client'
 import { prisma } from "../../../lib/prisma";
 
 
-export default async function handle(req , res) {
+export default async function handle(req:any,res:any) {
   const {Otro}=req.body
   try{
   const movimientos = await prisma.movimientos.findMany({
