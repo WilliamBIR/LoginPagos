@@ -26,6 +26,8 @@
     "react-query": "^3.34.5"
   },
   "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.121",
     "@types/node": "^16.11.13",
     "@types/react": "17.0.37",
     "eslint": "8.4.1",
