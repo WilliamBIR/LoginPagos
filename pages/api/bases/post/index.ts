@@ -57,7 +57,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
     
     const resultcliente = await prisma.clientes.create({
     data:{
-        usuario_id:usuarioid.usuario_id,
+        usuario_id:usuarioid!.usuario_id,
         cliente:DatosPrueba.cliente,
         emisor_id:emisorid.emisor_id,  
         montorecibido:aux,
