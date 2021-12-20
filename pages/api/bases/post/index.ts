@@ -120,7 +120,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
             emisor_id:emisorid!.emisor_id, 
             //Agregar receptor al formulario receptor
             receptor_id:1,  
-            status_comprobante_pago_id:statusid.status_id,
+            status_comprobante_pago_id:statusid!.status_id,
             //Agregar al formulario tipo de comprobante
             tipo_comprobante_id:1,
             moneda_id:monedaid!.moneda_id,
